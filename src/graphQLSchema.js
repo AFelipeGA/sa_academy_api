@@ -52,6 +52,7 @@ export default makeExecutableSchema({
 	resolvers: merge(
 		{ JSON: GraphQLJSON }, // allows scalar JSON
 		studentsResolvers,
-		coursesResolvers
+		coursesResolvers,
+		gradesResolvers
 	)
 });
